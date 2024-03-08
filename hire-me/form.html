@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelance Work Inquiry Form</title>
+    <a href="/index.html">Home</a>
+    <style>
+      /* Apply background color to the page */
+      body {
+        background-color: #858585;
+      }
+      form {
+        background-color: #bfbfbf;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-family: Helvetica Neue;
+        width: 60%; /* Shrink the form */
+        margin: 0 auto; /* Center the form */
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body></body>
+  <h1>FREELANCE WORK INQUIRY FORM</h1>
+  <form action="">
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="777-777-7777"
+        required
+      /><br /><br />
+    </fieldset>
+    <br /><br />
+    <fieldset>
+      <legend>Project Details</legend>
+      <label>Type of Service:</label><br />
+      <input
+        type="checkbox"
+        id="webapp"
+        name="service"
+        value="web app development"
+      />
+      <label for="webapp">Web App Development</label><br />
+      <input type="checkbox" id="mobileapp" name="service" value="mobile app" />
+      <label for="mobileapp">Mobile App Development</label><br />
+      <input
+        type="checkbox"
+        id="digital marketing"
+        name="service"
+        value="digital marketing"
+      />
+      <label for="digital marketing">Digital Marketing</label><br />
+      <input
+        type="checkbox"
+        id="virtual assistant"
+        name="service"
+        value="virtual assistant"
+      />
+      <label for="virtual assistant">Virtual Assistant</label><br />
+      <input
+        type="checkbox"
+        id="amazon virtual assistant"
+        name="service"
+        value="amazon virtual assistant"
+      />
+      <label for="Amazon virtual assistant">Amazon Virtual Assistant</label
+      ><br />
+    </fieldset>
+    <br /><br />
+    <fieldset>
+      <legend>Budget</legend>
+      <select name="budget" id="budget" required>
+        <option value="">Select Budget Range</option>
+        <option value="100-500">$100-$500</option>
+        <option value="500-1000">$500-$1000</option>
+        <option value="1000-2000">$1000-$2000</option>
+        <option value="2000+">$2000+</option>
+      </select>
+    </fieldset>
+    <br /><br />
+    <fieldset>
+      <legend>Choose Your Rate</legend>
+      <input type="radio" id="hourly" name="hourlyRate" checked />
+      <label for="hourlyRate">Rourly</label>
+      <input type="radio" id="fixed" name="fixedRate" />
+      <label for="fixedRate">Fixed</label>
+    </fieldset>
+    <br /><br />
+    <fieldset>
+      <legend>Attach Sample Work</legend>
+      <label for="fileUpload">Upload File:</label>
+      <input type="file" id="fileUplaod" name="fileUpload" />
+    </fieldset>
+    <br /><br />
+    <fieldset>
+      <legend>Project Description</legend>
+      <textarea
+        name="textarea"
+        id="projectDescription"
+        cols="30"
+        rows="10"
+        placeholder="Enter project description here..."
+      ></textarea
+      ><br /><br />
+    </fieldset>
+    <input type="submit" value="submit" />
+  </form>
+</html>
