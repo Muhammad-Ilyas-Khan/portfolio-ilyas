@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
     <style>
+      /* Minimal CSS styling */
+      .speaker-icon {
+        width: 50px;
+        cursor: pointer;
+      }
+      /* Hide the default audio controls */
+      audio {
+        display: none;
+      }
+      .video-container {
+        text-align: center; /* Centers the video horizontally */
+        max-width: 100%;
+      }
       body {
         font-family: monserrat;
         font-size: 20px;
         line-height: 1.5;
         margin-bottom: 20px;
+        align-items: center;
       }
       img {
         display: block; /* Ensures that margin: 0 auto; works */
@@ -65,5 +79,46 @@
     />
 
     <p><a href="#top">Top</a></p>
+    <br />
+    <hr />
+    <h1>Interactive Media Showcase</h1>
+    <h2>Experience brief audio and video snippets showcasing my projects</h2>
+    <div>
+      <!-- Speaker icon to trigger audio playback -->
+      <img
+        src="../images/icons8-speaker-80.png"
+        alt="Speaker Icon"
+        class="speaker-icon"
+        onclick="playAudio()"
+      />
+      <!-- Audio element with source file -->
+      <audio id="myAudio" preload="auto">
+        <source
+          src="../images/surprise-sound-effect-99300.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+      }
+    </script>
+    <br />
+    <h1>Featured Video</h1>
+    <div class="video-container">
+      <!-- Video element with source file -->
+      <video width="320" height="240" controls>
+        <source
+          src="../images/pexels-tom-fisk-20317587 (360p).mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <br />
+    <hr />
   </body>
 </html>
