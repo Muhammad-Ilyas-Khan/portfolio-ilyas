@@ -1,0 +1,38 @@
+/* Style the image */
+img {
+    width: 300px; /* Adjust the width as needed */
+    border: 3px solid #ccc; /* Add a border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  .image-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  body {
+    font-family: monserrat;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
